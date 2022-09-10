@@ -4,6 +4,7 @@
 
 To Add more List onto the PiHole go to this site: <br/>
 https://firebog.net/ <br/>
+https://obutterbach.medium.com/unlock-the-full-potential-of-pihole-e795342e0e36<br/>
 
 Once you have achieve your ideal list. <br/>
 
