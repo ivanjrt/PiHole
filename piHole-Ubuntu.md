@@ -41,6 +41,7 @@ systemctl poweroff -i
 Add Adlist from these two sites:
 https://firebog.net/
 https://obutterbach.medium.com/unlock-the-full-potential-of-pihole-e795342e0e36
+https://badmojr.github.io/1Hosts/Pro/domains.txt
 
 At the bottom of the page make sure you add the subnet and router info:
 ![image](https://user-images.githubusercontent.com/44326428/189513495-a0ff9481-98d7-432d-9a5a-da8c1924c262.png)
