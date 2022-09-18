@@ -38,10 +38,10 @@ test the website and if success then shutdown the VM, Reserve the IP in the DHCP
 systemctl poweroff -i	
 ```
 	
-Add Adlist from these two sites:
-https://firebog.net/
-https://obutterbach.medium.com/unlock-the-full-potential-of-pihole-e795342e0e36
-https://badmojr.github.io/1Hosts/Pro/domains.txt
+Add Adlist from these two sites:<br/>
+https://firebog.net/<br/>
+https://obutterbach.medium.com/unlock-the-full-potential-of-pihole-e795342e0e36<br/>
+https://badmojr.github.io/1Hosts/Pro/domains.txt<br/>
 
 At the bottom of the page make sure you add the subnet and router info:
 ![image](https://user-images.githubusercontent.com/44326428/189513495-a0ff9481-98d7-432d-9a5a-da8c1924c262.png)
