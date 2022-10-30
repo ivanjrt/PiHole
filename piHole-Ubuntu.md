@@ -28,10 +28,10 @@ From here is basicaly Next next 'til the end, if any changes then press 'Space b
 note: the last screen it will give you the password for the site, but you can always change it with ```pihole -a -p```
 
 * Disable the GUI
-	```
-  systemctl set-default multi-user.target
-	shutdown -r now
-  ```
+```
+  sudo systemctl set-default multi-user.target
+  sudo reboot
+ ```
 
 test the website and if success then shutdown the VM, Reserve the IP in the DHCP and then save it
 ```
