@@ -88,8 +88,7 @@ Test Validation
 The first command should give a status report of SERVFAIL and no IP address. The second should give NOERROR plus an IP address.
 
 Back to PiHole:
-![image](https://user-images.githubusercontent.com/44326428/200483928-c206db75-ca8d-4996-a163-54497f2d4fa5.png)
-
+![image](https://user-images.githubusercontent.com/44326428/200484961-4407e0e9-a96e-4c2c-9ef5-7995dbd38063.png)
 
 logging to unbound
 ```sudo nano /etc/unbound/unbound.conf.d/pi-hole.conf```
