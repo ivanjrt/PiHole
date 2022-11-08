@@ -43,10 +43,6 @@ https://firebog.net/<br/>
 https://obutterbach.medium.com/unlock-the-full-potential-of-pihole-e795342e0e36<br/>
 https://badmojr.github.io/1Hosts/Pro/domains.txt<br/>
 
-At the bottom of the page make sure you add the subnet and router info:
-![image](https://user-images.githubusercontent.com/44326428/189513495-a0ff9481-98d7-432d-9a5a-da8c1924c262.png)
-
-
 Update the Database  Tools > Gravity, it might take a while or just restart the VM
 
 To upgrade to a new PiHole Version. on the console type:
