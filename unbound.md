@@ -100,11 +100,18 @@ server:
     logfile: "/var/log/unbound/unbound.log"
     verbosity: 1
 ```
-```sudo mkdir -p /var/log/unbound```
-```sudo touch /var/log/unbound/unbound.log```
-```sudo chown unbound /var/log/unbound/unbound.log```
-```sudo service unbound restart```
-
+```
+sudo mkdir -p /var/log/unbound
+```
+```
+sudo touch /var/log/unbound/unbound.log
+```
+```
+sudo chown unbound /var/log/unbound/unbound.log
+```
+```
+sudo service unbound restart
+```
 
     
 
