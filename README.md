@@ -1,31 +1,13 @@
 # PiHole-Backup
 
-
-
 To Add more List onto the PiHole go to this site: <br/>
 https://firebog.net/ <br/>
 https://obutterbach.medium.com/unlock-the-full-potential-of-pihole-e795342e0e36<br/>
 
-Once you have achieve your ideal list. <br/>
+Here is how to back it up*. <br/>
 
-here is how to back it up*. <br/>
-
-
-
-Your current lists will be located in this path:<br/>
-```Ruby
- ls /etc/pihole/ -lh | grep "list"
-```
-
-As for your current Database, I found them here:<br/>
-
-``` Ruby
-ls -lh /etc/pihole/pihole-FTL.db
-```
-
-Although for sanity sake I'd just save the entire folder ```/etc/pihole/```  via WINSCP or FileZilla
+![image](https://user-images.githubusercontent.com/44326428/218639215-ae044476-d835-4b8e-84a6-9be89204fd99.png) <br/>
 
 
-
-
-*_I have only compiled this information, -I have not tested Take it As-Is._<br/>
+then Restore: <br/>
+![image](https://user-images.githubusercontent.com/44326428/218639514-7d30a211-a7f4-445d-b12e-0762e49ef1b4.png) <br/>
