@@ -89,7 +89,7 @@ The first command should give a status report of SERVFAIL and no IP address. The
 
 Back to PiHole:<br/>
 ![image](https://user-images.githubusercontent.com/44326428/200484961-4407e0e9-a96e-4c2c-9ef5-7995dbd38063.png)
-
+```127.0.0.1#5335```<br/>
 logging to unbound<br/>
 ```sudo nano /etc/unbound/unbound.conf.d/pi-hole.conf```
 Add this but omit **server:   the command just go underneath**<br/>
