@@ -1,6 +1,6 @@
 After Installing PiHole, and making sure it works
 source: https://docs.pi-hole.net/guides/dns/unbound/
-https://www.techaddressed.com/tutorials/pi-hole-recursive-dns-unbound/
+https://www.techaddressed.com/tutorials/pi-hole-recursive-dns-unbound/ <br/>
 ```sudo apt install unbound -y```
 ```sudo nano /etc/unbound/unbound.conf.d/pi-hole.conf```
 Add this to that file:
@@ -77,28 +77,30 @@ Restarting the service
 Checking for the first time a request, If issues restart the Pihole Host
 ```dig pi-hole.net @127.0.0.1 -p 5335```
 
-```nano /etc/dnsmasq.d/99-edns.conf```
-Add this:
+```sudo nano /etc/dnsmasq.d/99-edns.conf```<br/>
+Add this:<br/>
 ```
 edns-packet-max=1232
 ```
-Test Validation
-```dig sigfail.verteiltesysteme.net @127.0.0.1 -p 5335```
-```dig sigok.verteiltesysteme.net @127.0.0.1 -p 5335```
+Test Validation<br/>
+```dig fail01.dnssec.works @127.0.0.1 -p 5335```<br/>
+```dig dnssec.works @127.0.0.1 -p 5335```<br/>
 The first command should give a status report of SERVFAIL and no IP address. The second should give NOERROR plus an IP address.
 
-Back to PiHole:
+Back to PiHole:<br/>
 ![image](https://user-images.githubusercontent.com/44326428/200484961-4407e0e9-a96e-4c2c-9ef5-7995dbd38063.png)
 
-logging to unbound
+logging to unbound<br/>
 ```sudo nano /etc/unbound/unbound.conf.d/pi-hole.conf```
-Add this but omit **server**
+Add this but omit **server:   the command just go underneath**<br/>
+
 ```
 server:
     # If no logfile is specified, syslog is used
     logfile: "/var/log/unbound/unbound.log"
     verbosity: 1
 ```
+![image](https://user-images.githubusercontent.com/44326428/218625265-83a16621-fb19-426f-b881-f86fce5e9ded.png)<br/>
 ```
 sudo mkdir -p /var/log/unbound
 ```
