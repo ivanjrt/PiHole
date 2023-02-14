@@ -11,3 +11,6 @@ Here is how to back it up*. <br/>
 
 then Restore: <br/>
 ![image](https://user-images.githubusercontent.com/44326428/218639514-7d30a211-a7f4-445d-b12e-0762e49ef1b4.png) <br/>
+
+then Update Gravity: <br/>
+![image](https://user-images.githubusercontent.com/44326428/218639704-c81fc3b2-43b0-4215-9e83-b2721d3d28e4.png)
