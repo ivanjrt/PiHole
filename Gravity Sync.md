@@ -28,3 +28,25 @@ Then just add yes to secure the connection, it should look like this:
  * gravity-sync
  * ![image](https://user-images.githubusercontent.com/44326428/218904300-9557ef44-438a-4f55-aa59-a2f07c2d84b1.png)
 and it should foward that blocklist
+
+# To automate it 
+```
+gravity-sync auto quad
+```
+from the Master, which will sync every 15 Mins, although no sure so, I did this: <br/>
+```crontab -e```
+and Added this at the end
+```
+*/10 * * * * /bin/bash gravity-sync push
+```
+
+Notes:
+to update gravity sync:
+```
+gravity-sync version
+gravity-sync update
+```
+Commands without a password: https://linuxize.com/post/how-to-run-sudo-command-without-password/  <br/>
+full manual on gravity: https://github.com/vmstan/gravity-sync <br/>
+here's very old info but at least it has the flow of what needs to happen, https://www.youtube.com/watch?v=IFVYe3riDRA&t  <br/>
+
