@@ -21,3 +21,10 @@ curl -sSL https://raw.githubusercontent.com/vmstan/gs-install/main/gs-install.sh
 ```
 Then just add yes to secure the connection, it should look like this:
 ![image](https://user-images.githubusercontent.com/44326428/218898597-ec78e181-3918-43e0-aeab-e3b66510b686.png)
+
+# Time to test things out, add a rule block in the main pihole:
+ * gravity-sync compare
+ * gravity-sync push
+ * gravity-sync
+ * ![image](https://user-images.githubusercontent.com/44326428/218904300-9557ef44-438a-4f55-aa59-a2f07c2d84b1.png)
+and it should foward that blocklist
