@@ -11,7 +11,7 @@
  ```
  pihole ALL=(ALL) NOPASSWD:ALL
  ```
- ![image](https://user-images.githubusercontent.com/44326428/218896437-05643430-0ff1-48c2-8e6a-30775f7b3569.png) <br/>
+![image](https://github.com/ivanjrt/PiHole-Backup-Ubuntu/assets/44326428/b417d823-2cf1-4099-8bb0-e90aeca25b3f) <br/>
  where pihole is the user name with admin rights, This process will omit the password input everytime he puts sudo in the begining. <br/>
  then reboot ```sudo reboot```
 # Run the installer for Gravity sync:
@@ -19,13 +19,16 @@
 ```
 curl -sSL https://raw.githubusercontent.com/vmstan/gs-install/main/gs-install.sh | bash
 ```
-Then just add yes to secure the connection, it should look like this:
-![image](https://user-images.githubusercontent.com/44326428/218898597-ec78e181-3918-43e0-aeab-e3b66510b686.png)
+Then just add yes to secure the connection, it should look like this: <br/>
+it will ask you for the IP of the secondary PiHole and the username, and at the end it will run its first sync and will show result<br/>
+![image](https://github.com/ivanjrt/PiHole-Backup-Ubuntu/assets/44326428/309516a7-4ec5-4563-b935-20ea29627f7c)<br/>
+
 
 # Time to test things out, add a rule block in the main pihole:
- * gravity-sync compare
- * gravity-sync push
- * gravity-sync
+ * `gravity-sync compare`
+ * `gravity-sync push` it will push from itself to the remote pihole
+ * * `gravity-sync pull` it will pull from itself to the remote pihole
+ * `gravity-sync` both
  * ![image](https://user-images.githubusercontent.com/44326428/218904300-9557ef44-438a-4f55-aa59-a2f07c2d84b1.png)
 and it should foward that blocklist
 
