@@ -84,12 +84,14 @@ edns-packet-max=1232
 ```
 Test Validation<br/>
 ```dig fail01.dnssec.works @127.0.0.1 -p 5335```<br/>
+![image](https://github.com/ivanjrt/PiHole-Backup-Ubuntu/assets/44326428/5a2f7bfd-061d-4862-be6d-c29b79cf542d)<br/>
 ```dig dnssec.works @127.0.0.1 -p 5335```<br/>
-The first command should give a status report of SERVFAIL and no IP address. The second should give NOERROR plus an IP address.
+![image](https://github.com/ivanjrt/PiHole-Backup-Ubuntu/assets/44326428/adb1e93a-f52f-455b-9ce4-f9dcaa63fc34)<br/>
 
-Back to PiHole:<br/>
-![image](https://user-images.githubusercontent.com/44326428/200484961-4407e0e9-a96e-4c2c-9ef5-7995dbd38063.png)
-```127.0.0.1#5335```<br/>
+
+Back to PiHole: Settings > DNS <br/>
+```127.0.0.1#5335``` & Permit all origins <br/>
+![image](https://github.com/ivanjrt/PiHole-Backup-Ubuntu/assets/44326428/fa30a246-9653-43ec-bfd9-d00f93031f58)<br/>
 logging to unbound<br/>
 ```sudo nano /etc/unbound/unbound.conf.d/pi-hole.conf```
 Add this but omit **server:   the command just go underneath**<br/>
