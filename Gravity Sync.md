@@ -27,7 +27,7 @@ it will ask you for the IP of the secondary PiHole and the username, and at the 
 # Time to test things out, add a rule block in the main pihole:
  * `gravity-sync compare`
  * `gravity-sync push` it will push from itself to the remote pihole
- * * `gravity-sync pull` it will pull from itself to the remote pihole
+ * `gravity-sync pull` it will pull from itself to the remote pihole
  * `gravity-sync` both
  * ![image](https://user-images.githubusercontent.com/44326428/218904300-9557ef44-438a-4f55-aa59-a2f07c2d84b1.png)
 and it should foward that blocklist
