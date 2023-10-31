@@ -102,7 +102,7 @@ server:
     logfile: "/var/log/unbound/unbound.log"
     verbosity: 1
 ```
-![image](https://user-images.githubusercontent.com/44326428/218625265-83a16621-fb19-426f-b881-f86fce5e9ded.png)<br/>
+![image](https://github.com/ivanjrt/PiHole-Backup-Ubuntu/assets/44326428/90e38035-30ae-49f6-add4-97476334eb27)<br/>
 ```
 sudo mkdir -p /var/log/unbound
 ```
