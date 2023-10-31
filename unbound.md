@@ -90,8 +90,8 @@ Test Validation<br/>
 
 
 Back to PiHole: Settings > DNS <br/>
-```127.0.0.1#5335``` & Permit all origins <br/>
-![image](https://github.com/ivanjrt/PiHole-Backup-Ubuntu/assets/44326428/fa30a246-9653-43ec-bfd9-d00f93031f58)<br/>
+```127.0.0.1#5335```,  Permit all origins & remove Google<br/>
+![image](https://github.com/ivanjrt/PiHole-Backup-Ubuntu/assets/44326428/98de3708-8c98-4a9c-9b1b-17c5363ef812) <br/>
 logging to unbound<br/>
 ```sudo nano /etc/unbound/unbound.conf.d/pi-hole.conf```
 Add this but omit **server:   the command just go underneath**<br/>
