@@ -1,8 +1,8 @@
 After Installing PiHole, and making sure it works
 source: https://docs.pi-hole.net/guides/dns/unbound/
 https://www.techaddressed.com/tutorials/pi-hole-recursive-dns-unbound/ <br/>
-```sudo apt install unbound -y```
-```sudo nano /etc/unbound/unbound.conf.d/pi-hole.conf```
+```sudo apt install unbound -y```<br/>
+```sudo nano /etc/unbound/unbound.conf.d/pi-hole.conf```<br/>
 Add this to that file:
 ```
 server:
@@ -72,10 +72,10 @@ server:
     private-address: fd00::/8
     private-address: fe80::/10
 ```
-Restarting the service
-```sudo service unbound restart```
-Checking for the first time a request, If issues restart the Pihole Host
-```dig pi-hole.net @127.0.0.1 -p 5335```
+Restarting the service<br/>
+```sudo service unbound restart```<br/>
+Checking for the first time a request, If issues restart the Pihole Host<br/>
+```dig pi-hole.net @127.0.0.1 -p 5335```<br/>
 
 ```sudo nano /etc/dnsmasq.d/99-edns.conf```<br/>
 Add this:<br/>
