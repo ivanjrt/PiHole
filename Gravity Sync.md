@@ -37,16 +37,16 @@ and it should foward that blocklist
 gravity-sync auto quad
 ```
 from the Master, which will sync every 15 Mins, although no sure so, I did this: <br/>
-```crontab -e```
-and Added this at the end
+```crontab -e``` <br/>
+and Added this at the end <br/>
 ![image](https://github.com/ivanjrt/PiHole-Backup-Ubuntu/assets/44326428/0032fd67-7189-46ca-abd9-ff69150d72d7)
-I'm doing every 8 hrs just in case I need to fix something, so it wont spread as fast enough time to fix it before a Restore OS
+I'm doing every 8 hrs just in case I need to fix something, so it wont spread as fast enough time to fix it before a Restore OS <br/>
 ```
 0 */8 * * * /bin/bash gravity-sync push
 ```
 
-Notes:
-to update gravity sync:
+Notes: <br/>
+to update gravity sync: <br/>
 ```
 gravity-sync version
 gravity-sync update
