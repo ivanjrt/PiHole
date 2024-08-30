@@ -1,3 +1,5 @@
+When Upgrading Ubuntu somtimes is quiet challenging. therefore this guide below can help with that
+
 # Step 1:
 ```
 sudo apt update
@@ -10,7 +12,6 @@ sudo apt dist-upgrade
 sudo do-release-upgrade
 ```
 
-
 # Step 3:
 ```
 sudo do-release-upgrade
@@ -18,6 +19,7 @@ sudo do-release-upgrade
 ```
 sudo reboot
 ```
+
 # Step 4: 
 ```
 sudo do-release-upgrade -d
@@ -32,4 +34,3 @@ sudo reboot
 sudo apt clean
 sudo apt autoremove
 ```
-
